@@ -1,9 +1,9 @@
 import argparse
 from .new_module import PrintingClass
 
-# NOTE: uncomment when ready for release
-# def new_function2(maybe_or_not):
-#     print("Hear I come")
+
+def new_function2(maybe_or_not):
+    print("Hear I come!")
 
 
 def new_cool_subfuntion_for_printing(what_to_print):
@@ -13,8 +13,7 @@ def new_cool_subfuntion_for_printing(what_to_print):
 
 def new_function(args=None):
     new_cool_subfuntion_for_printing(args)
-    # uncomment when ready for release
-    # new_function2(args)
+    new_function2(args)
 
 
 def app():
