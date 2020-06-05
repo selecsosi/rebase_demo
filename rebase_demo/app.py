@@ -1,12 +1,10 @@
 import argparse
-import os
-import sys
 
+def new_cool_subfuntion_for_printing(what_to_print):
+    return "Hello"
 
-def new_function(args):
-    print("Hello")
-    print(args)
-    print(f"PythonPath: {sys.path}")
+def new_function(args=None):
+    new_cool_subfuntion_for_printing(args)
 
 
 def app():
