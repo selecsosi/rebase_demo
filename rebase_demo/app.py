@@ -1,9 +1,12 @@
 import argparse
+import os
+import sys
 
 
 def new_function(args):
     print("Hello")
     print(args)
+    print(f"PythonPath: {sys.path}")
 
 
 def app():
