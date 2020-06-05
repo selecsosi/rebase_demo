@@ -1,9 +1,19 @@
-def new_function():
-    return "Hello"
+import argparse
+
+
+def new_function(args):
+    print("Hello")
+    print(args)
 
 
 def app():
-    new_function()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("value", type=str,
+                        help="value to display")
+    parser.add_argument("-v", "--verbosity", action="count",
+                        help="increase output verbosity")
+    args = parser.parse_args()
+    new_function(args)
 
 
 if __name__ == "__main__":
