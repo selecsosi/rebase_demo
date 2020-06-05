@@ -10,4 +10,5 @@ class PrintingClass:
     def print(self):
         print("Hello from printing class")
         print(f"This was my message: {self.message}")
+        print(f"These were my args: {self.args}")
         print(f"PythonPath: {sys.path}")
