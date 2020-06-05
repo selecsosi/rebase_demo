@@ -1,5 +1,8 @@
-def new_function():
-    return "Hello"
+def new_function2(maybe_or_not):
+    print("Hear I come")
+
+def new_function(arg=None):
+    new_function2(arg)
 
 
 def app():
