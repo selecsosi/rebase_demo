@@ -1,7 +1,9 @@
 import argparse
+from .new_module import PrintingClass
 
 def new_cool_subfuntion_for_printing(what_to_print):
-    return "Hello"
+    pc = PrintingClass("Coming from app.new_cool_subfuntion_for_printing", what_to_print)
+    pc.print()
 
 def new_function(args=None):
     new_cool_subfuntion_for_printing(args)
