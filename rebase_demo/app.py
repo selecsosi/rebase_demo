@@ -1,3 +1,4 @@
+import argparse
 from .new_module import PrintingClass
 
 
@@ -11,8 +12,13 @@ def new_function(args=None):
 
 
 def app():
-    # TODO: I know bob will be adding in the arg parsing, working on other cool function for now
-    new_function()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("value", type=str,
+                        help="value to display")
+    parser.add_argument("-v", "--verbosity", action="count",
+                        help="increase output verbosity")
+    args = parser.parse_args()
+    new_function(args)
 
 
 if __name__ == "__main__":
